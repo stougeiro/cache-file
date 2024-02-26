@@ -1,0 +1,152 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "f807cb88715cc606852fdcabc29cbdfe",
+    "packages": [
+        {
+            "name": "psr/simple-cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "2d280c2aaa23a120f35d55cfde8581954a8e77fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/2d280c2aaa23a120f35d55cfde8581954a8e77fa",
+                "reference": "2d280c2aaa23a120f35d55cfde8581954a8e77fa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/master"
+            },
+            "time": "2022-04-08T16:41:45+00:00"
+        },
+        {
+            "name": "stougeiro/cache-contract",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stougeiro/cache-contract.git",
+                "reference": "37bde0c945d3e4cea9d963820a5537db411a97b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stougeiro/cache-contract/zipball/37bde0c945d3e4cea9d963820a5537db411a97b2",
+                "reference": "37bde0c945d3e4cea9d963820a5537db411a97b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "psr/simple-cache": "^3.0@dev"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "STDW\\Cache\\Contract\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "stougeiro",
+                    "email": "sidneytougeiro@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/stougeiro/cache-contract/issues",
+                "source": "https://github.com/stougeiro/cache-contract/tree/v0.1.0"
+            },
+            "time": "2024-02-26T20:58:05+00:00"
+        },
+        {
+            "name": "stougeiro/valueobject",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stougeiro/valueobject.git",
+                "reference": "da99bb4cc332fae54c29d8c25b9eb37e334896cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stougeiro/valueobject/zipball/da99bb4cc332fae54c29d8c25b9eb37e334896cd",
+                "reference": "da99bb4cc332fae54c29d8c25b9eb37e334896cd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "STDW\\ValueObject\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "S.Tougeiro",
+                    "email": "sidneytougeiro@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/stougeiro/valueobject/issues",
+                "source": "https://github.com/stougeiro/valueobject/tree/v0.1.0"
+            },
+            "time": "2024-02-26T22:46:35+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
