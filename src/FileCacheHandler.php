@@ -6,6 +6,8 @@
     use STDW\Cache\File\Exception\FileCacheException;
     use STDW\Cache\File\ValueObject\FileExtensionValue;
     use STDW\Cache\File\ValueObject\StorageValue;
+    use STDW\Cache\File\ValueObject\TTLValue;
+    use DateInterval;
 
 
     class FileCacheHandler implements CacheHandlerInterface
@@ -55,14 +57,20 @@
             return $collection;
         }
 
-        public function set(string $key, mixed $value, null|int|\DateInterval $ttl = null): bool
+        public function set(string $key, mixed $value, null|int|DateInterval $ttl = null): bool
         {
             $this->delete($key);
 
-            return (bool) file_put_contents($this->storage->get() . $this->hash($key) .'-'. $ttl . $this->file_extension->get(), base64_encode( serialize($value)));
+            $ttl = TTLValue::create($ttl);
+
+            if ( ! $ttl->isValid()) {
+                throw FileCacheException::TTLNotValid($ttl);
+            }
+
+            return (bool) file_put_contents($this->storage->get() . $this->hash($key).'-'.$ttl->get().$this->file_extension->get(), base64_encode( serialize($value)));
         }
 
-        public function setMultiple(iterable $values, null|int|\DateInterval $ttl = null): bool
+        public function setMultiple(iterable $values, null|int|DateInterval $ttl = null): bool
         {
             foreach ($values as $key => $value) {
                 $this->set($key, $value, $ttl);

@@ -9,9 +9,7 @@
     {
         public function __construct(
             protected string $path)
-        {
-            $this->path = $path;
-        }
+        { }
 
 
         public function get(): string

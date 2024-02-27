@@ -4,6 +4,7 @@
 
     use STDW\Cache\File\ValueObject\FileExtensionValue;
     use STDW\Cache\File\ValueObject\StorageValue;
+    use STDW\Cache\File\ValueObject\TTLValue;
     use Exception;
 
 
@@ -17,5 +18,10 @@
         public static function fileExtensionNotValid(FileExtensionValue $file_extension): object
         {
             return new static("Invalid file extension: '".$file_extension->get()."'. File extension must be alphanumeric string, preceded by a single dot.");
+        }
+
+        public static function TTLNotValid(TTLValue $ttl): object
+        {
+            return new static("Invalid TTL value: '".$ttl->get()."'. TTL must be null (default value), a positive integer or a DateInterval instance with positive result.");
         }
     }

@@ -9,9 +9,7 @@
     {
         public function __construct(
             protected string $file_extension)
-        {
-            $this->file_extension = $file_extension;
-        }
+        { }
 
 
         public function get(): string
