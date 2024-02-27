@@ -9,7 +9,7 @@
 
     final class TTLValue extends ValueObjectAbstracted
     {
-        private static int $defaultValue = 0;
+        private static int $defaultValue = 300; // 5min
 
 
         public function __construct(
