@@ -3,7 +3,6 @@
     namespace STDW\Cache\File;
 
     use STDW\Cache\Contract\CacheHandlerInterface;
-    use STDW\Cache\File\Exception\FileCacheException;
     use STDW\Cache\File\ValueObject\FileExtensionValue;
     use STDW\Cache\File\ValueObject\StorageValue;
     use STDW\Cache\File\ValueObject\TTLValue;

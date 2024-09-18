@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-    namespace STDW\Cache\File\Exception;
+    namespace STDW\Cache\File;
 
     use STDW\Cache\File\ValueObject\FileExtensionValue;
     use STDW\Cache\File\ValueObject\StorageValue;
