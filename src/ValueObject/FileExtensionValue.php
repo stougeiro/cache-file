@@ -19,7 +19,7 @@
 
         public function isValid(): bool
         {
-            if ( ! preg_match('/^\.[a-zA-Z0-9]{1,}$', $this->file_extension)) {
+            if ( ! preg_match('/^\.[a-zA-Z0-9]{1,}$/', $this->file_extension)) {
                 return false;
             }
 
