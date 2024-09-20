@@ -20,11 +20,14 @@
             $this->app->singleton(CacheHandlerInterface::class, function() {
                 return new FileCacheHandler(CACHE);
             });
+
+            $this->app::macro('cache', function() {
+                return $this->app->make(CacheInterface::class);
+            });
         }
 
         public function boot(): void
         {
-            $this->app->cache = $this->app->make(CacheInterface::class);
         }
 
         public function terminate(): void
