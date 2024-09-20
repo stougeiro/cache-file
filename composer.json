@@ -19,6 +19,6 @@
         "stougeiro/valueobject": "0.1.0",
         "stougeiro/contract": "v0.1.0",
         "stougeiro/cache-contract": "0.1.0",
-        "stougeiro/cache": "0.2.1"
+        "stougeiro/cache": "0.3.0"
     }
 }

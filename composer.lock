@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cb515b62e348afb1a20e13137932bf5",
+    "content-hash": "739253f305ee4b503303ca6296da5a3c",
     "packages": [
         {
             "name": "psr/simple-cache",
@@ -60,16 +60,16 @@
         },
         {
             "name": "stougeiro/cache",
-            "version": "v0.2.1",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stougeiro/cache.git",
-                "reference": "fc9fe22bbadce71b7e625c65de4d8918e78d17c0"
+                "reference": "eab7fcfeba793e2f834e72cb8845464becf758d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stougeiro/cache/zipball/fc9fe22bbadce71b7e625c65de4d8918e78d17c0",
-                "reference": "fc9fe22bbadce71b7e625c65de4d8918e78d17c0",
+                "url": "https://api.github.com/repos/stougeiro/cache/zipball/eab7fcfeba793e2f834e72cb8845464becf758d6",
+                "reference": "eab7fcfeba793e2f834e72cb8845464becf758d6",
                 "shasum": ""
             },
             "require": {
@@ -95,9 +95,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stougeiro/cache/issues",
-                "source": "https://github.com/stougeiro/cache/tree/v0.2.1"
+                "source": "https://github.com/stougeiro/cache/tree/v0.3.0"
             },
-            "time": "2024-09-20T03:52:53+00:00"
+            "time": "2024-09-20T14:03:06+00:00"
         },
         {
             "name": "stougeiro/cache-contract",
