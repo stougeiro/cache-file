@@ -12,7 +12,7 @@
     use STDW\Cache\File\FileCacheHandler;
 
 
-    class CacheServiceProvider extends ServiceProviderAbstracted
+    class ServiceProvider extends ServiceProviderAbstracted
     {
         public function register(): void
         {
