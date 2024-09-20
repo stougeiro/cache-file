@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f807cb88715cc606852fdcabc29cbdfe",
+    "content-hash": "41e9b5ea64340ab8e070ebd99c54bd8b",
     "packages": [
         {
             "name": "psr/simple-cache",
@@ -59,6 +59,46 @@
             "time": "2022-04-08T16:41:45+00:00"
         },
         {
+            "name": "stougeiro/cache",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stougeiro/cache.git",
+                "reference": "0c796a37c60d5772e70bd3e693380de60e74e99a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stougeiro/cache/zipball/0c796a37c60d5772e70bd3e693380de60e74e99a",
+                "reference": "0c796a37c60d5772e70bd3e693380de60e74e99a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "stougeiro/cache-contract": "0.1.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "STDW\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "stougeiro",
+                    "email": "sidneytougeiro@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/stougeiro/cache/issues",
+                "source": "https://github.com/stougeiro/cache/tree/v0.1.0"
+            },
+            "time": "2024-02-26T21:07:00+00:00"
+        },
+        {
             "name": "stougeiro/cache-contract",
             "version": "v0.1.0",
             "source": {
@@ -97,6 +137,45 @@
                 "source": "https://github.com/stougeiro/cache-contract/tree/v0.1.0"
             },
             "time": "2024-02-26T20:58:05+00:00"
+        },
+        {
+            "name": "stougeiro/contract",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stougeiro/contract.git",
+                "reference": "7e926d778863191ba50ea3beff0ab3dd580ceb5a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stougeiro/contract/zipball/7e926d778863191ba50ea3beff0ab3dd580ceb5a",
+                "reference": "7e926d778863191ba50ea3beff0ab3dd580ceb5a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "STDW\\Contract\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "stougeiro",
+                    "email": "sidneytougeiro@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/stougeiro/contract/issues",
+                "source": "https://github.com/stougeiro/contract/tree/v0.1.0"
+            },
+            "time": "2024-09-18T17:16:46+00:00"
         },
         {
             "name": "stougeiro/valueobject",
