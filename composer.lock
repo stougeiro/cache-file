@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c0eb50b7f16215a88b246a7be17e63a",
+    "content-hash": "4b4d95ac6b418c9eb3eb0c713106dbf0",
     "packages": [
         {
             "name": "psr/simple-cache",
@@ -60,16 +60,16 @@
         },
         {
             "name": "stougeiro/cache",
-            "version": "v0.3.1",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stougeiro/cache.git",
-                "reference": "85baf72fa99653a98f1ce38f4d40939a4257a68d"
+                "reference": "fe837791a9bbceed42fe053ddfed245c2b78c48a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stougeiro/cache/zipball/85baf72fa99653a98f1ce38f4d40939a4257a68d",
-                "reference": "85baf72fa99653a98f1ce38f4d40939a4257a68d",
+                "url": "https://api.github.com/repos/stougeiro/cache/zipball/fe837791a9bbceed42fe053ddfed245c2b78c48a",
+                "reference": "fe837791a9bbceed42fe053ddfed245c2b78c48a",
                 "shasum": ""
             },
             "require": {
@@ -79,6 +79,9 @@
             },
             "type": "package",
             "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
                 "psr-4": {
                     "STDW\\Cache\\": "src/"
                 }
@@ -95,9 +98,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stougeiro/cache/issues",
-                "source": "https://github.com/stougeiro/cache/tree/v0.3.1"
+                "source": "https://github.com/stougeiro/cache/tree/v0.5.0"
             },
-            "time": "2024-09-23T04:39:40+00:00"
+            "time": "2024-09-23T05:52:04+00:00"
         },
         {
             "name": "stougeiro/cache-contract",
