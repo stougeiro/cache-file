@@ -11,10 +11,7 @@
     "autoload": {
         "psr-4": {
             "STDW\\Cache\\File\\": "src/"
-        },
-        "files": [
-            "src/functions.php"
-        ]
+        }
     },
     "minimum-stability": "dev",
     "require": {
