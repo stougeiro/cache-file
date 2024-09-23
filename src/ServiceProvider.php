@@ -2,8 +2,7 @@
 
     namespace STDW\Cache\File;
 
-    defined('CACHE') or define('CACHE', dirname(__FILE__).DIRECTORY_SEPARATOR.'cache');
-
+    defined('CACHE') or define('CACHE', sys_get_temp_dir());
 
     use STDW\Contract\ServiceProviderAbstracted;
     use STDW\Cache\Contract\CacheInterface;
