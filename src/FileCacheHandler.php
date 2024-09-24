@@ -7,6 +7,7 @@
     use STDW\Cache\File\ValueObject\StorageValue;
     use STDW\Cache\File\ValueObject\TTLValue;
     use DateInterval;
+    use Throwable;
 
 
     class FileCacheHandler implements CacheHandlerInterface
@@ -16,8 +17,20 @@
         protected FileExtensionValue $file_extension;
 
 
-        public function __construct(string $storage, string $file_extension = '.cache')
+        public function __construct()
         {
+            try {
+                $storage = config('cache.storage');
+            } catch (Throwable $e) {
+                $storage = sys_get_temp_dir();
+            }
+
+            try {
+                $file_extension = config('cache.file_extension');
+            } catch (Throwable $e) {
+                $file_extension = '.cache';
+            }
+
             $this->storage = StorageValue::create($storage);
             $this->file_extension = FileExtensionValue::create($file_extension);
 
