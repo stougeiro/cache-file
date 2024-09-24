@@ -22,7 +22,7 @@
             try {
                 $storage = config('cache.storage');
             } catch (Throwable $e) {
-                $storage = sys_get_temp_dir();
+                $storage = sys_get_temp_dir() . DIRECTORY_SEPARATOR;
             }
 
             try {
